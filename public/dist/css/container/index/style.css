@@ -1,65 +1,25 @@
-.form {
+.container {
   display: flex;
-  flex-direction: column;
   padding: 16px;
-  gap: 32px;
+  gap: 16px;
 }
-.form__title {
+
+.title {
   font-size: 20px;
   font-weight: bold;
   color: #0088ff;
-  padding-bottom: 4px;
+  margin-bottom: 8px;
 }
-.form__card {
-  border: 1px solid #ddd;
-  box-shadow: 4px 4px 4px 0px #ddd;
-  padding: 20px;
-  border-radius: 20px;
-  width: 800px;
-}
-.form__info {
-  padding-bottom: 20px;
-  font-weight: bold;
-}
-.form__content {
+
+.link {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.form__item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 12px;
-}
-.form__field {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.form__label {
-  font-size: 14px;
-}
-.form__input {
-  border: 1px solid #ddd;
-  padding: 8px;
-  border-radius: 10px;
-}
-.form__span {
-  font-size: 14px;
-  color: #ddd;
-}
-.form__button {
-  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
   border-radius: 10px;
   color: #fff;
   background-color: #0088ff;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
