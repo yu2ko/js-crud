@@ -1,0 +1,26 @@
+<main>
+  <section>
+    <div class='products'>
+			<div class="products_head container">
+      	<h1 class='products__title'>Список товарів</h1>
+				<a href='/' class='link_main'>На головну</a>
+			</div>
+			
+      <div>
+        {{#with data.products}}
+          {{#if isEmpty}}
+            <p class='products__info'>Товари відсутні</p>
+          {{else}}
+            <ul class='products__list'>
+              {{#each list}}
+                <li>
+                  {{> product-card data=this}}
+                </li>
+              {{/each}}
+            </ul>
+          {{/if}}
+        {{/with}}
+      </div>
+    </div>
+  </section>
+</main>

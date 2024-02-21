@@ -1,0 +1,77 @@
+@use '../../lib/service.scss' as s;
+
+.products {
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: s.color('primary');
+    margin-bottom: s.space(3);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: s.space(3);
+    row-gap: s.space(6);
+  }
+
+	&__info {
+	margin-left: 25px;
+}
+}
+
+.container {
+  display: flex;
+	align-items: baseline;
+  padding: s.space(4);
+  gap: s.space(4);
+}
+
+.link_main {
+  padding: s.space(2) s.space(4);
+  border-radius: 10px;
+  color: s.color('txt-white');
+  background-color: s.color('btn-green');
+  text-decoration: none;
+}
+
+main {
+  padding: s.space(5);
+}
+
+.product-card {
+  border: 1px solid s.color('light');
+  box-shadow: 4px 4px 4px 0px s.color('light');
+  padding: s.space(5);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: s.space(5);
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__id {
+    color: s.color('light');
+  }
+
+  &__info {
+    display: flex;
+    gap: s.space(5);
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: s.color('primary');
+    text-decoration: none;
+  }
+}
