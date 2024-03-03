@@ -1,0 +1,74 @@
+<main class="main">                                                             
+                                                                                
+{{#with data}}                                                             
+                                                                                
+  {{> heading title="Інформація про замовлення"}}                               
+
+		<div class="purchase-order__card">                                                                            
+			<div class="purchase-item">                                                     
+				<span>ID:</span> {{id}}                                                     
+			</div>                                                                        
+																																										
+			{{> divider}}                                                                   
+																																										
+			<div class="purchase-item__block">                                            
+				<div class="purchase-item">                                                 
+					<span>Ім'я:</span> {{firstname}}                                            
+				</div>                                                                        
+																																										
+				<div class="purchase-item">                                                   
+					<span>Прізвище:</span> {{lastname}}                                         
+				</div>                                                                        
+			</div>                                                                        
+																																										
+			<div class="purchase-item__block">                                            
+				<div class="purchase-item">                                                 
+					<span>Телефон:</span> {{phone}}                                             
+				</div>                                                                        
+																																										
+				<div class="purchase-item">                                                   
+					<span>Електронна пошта:</span> {{email}}                                    
+				</div>                                                                        
+			</div>                                                                        
+																																										
+			{{> divider}}                                                                 
+																																										
+			<div class="purchase-item">                                                   
+				<span>Назва товару:</span> {{product}}                                
+			</div>                                                                        
+																																										
+			<div class="purchase-item">                                                   
+				<span>Коментар:</span> {{#if comment}}{{comment}}{{else}}-{{/if}}           
+			</div>                                                                        
+																																										
+			{{> divider}}                                                                 
+																																										
+			<div class="purchase-item__block">                                            
+				<div class="purchase-item">                                                 
+					<span>Вартість товарів:</span> {{productPrice}}₴                            
+				</div>                                                                        
+																																										
+				<div class="purchase-item">                                                   
+					<span>Вартість доставки:</span> {{deliveryPrice}}₴                          
+				</div>                                                                        
+			</div>                                                                        
+																																										
+			<div class="purchase-item__block">                                            
+				<div class="purchase-item">                                                 
+					<span>Сума до сплати:</span> {{totalPrice}}₴                                
+				</div>                                                                        
+																																										
+				<div class="purchase-item">                                                   
+					<span>Нараховані бонуси:</span> {{bonus}}₴                           
+				</div>                                                                        
+			</div>                                                                        
+																																										
+			{{> divider}}
+			                                                                   
+			<div class="purchase-item">																																								
+			<a href='/purchase-modify?id={{id}}' class="button button--blue">Змінити дані</a> 
+			</div>
+		</div>                                                                              
+{{/with}}                                                                       
+                                                                                
+</main>                                                                         

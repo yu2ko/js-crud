@@ -1,0 +1,72 @@
+@use "../../lib/service.scss" as s;
+
+@use "../../component/heading/style.scss" as heading;
+@use "../../component/purchase-product/style.scss" as purchaseProduct;
+@use "../../component/field/style.scss" as field;
+@use "../../component/divider/style.scss" as divider;
+@use "../../component/button/style.scss" as button;
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(10);
+	padding: s.space(10);
+}
+
+.product-info {
+	display: grid;                 
+	grid-template-columns: 1fr 1fr;
+	gap: s.space(5);               
+
+
+	&__image {
+		max-height: 420px;
+		width: 100%;
+	}
+
+	&__block {
+		display: flex;          
+	flex-direction: column; 
+	gap: s.space(6);        
+	align-items: flex-start;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	&__subtitle {
+		font-size: 16px;
+		color: s.color(grey);
+	}
+
+	&__category {
+		padding: 5px 10px;
+		border-radius: 30px;
+		font-size: 14px;
+		color: s.color(dark);
+		border: 1px solid transparent;
+	}
+
+	&__category--1 {
+		border-color: blue;
+		color: blue;
+	}
+
+	&__category--2 {
+		border-color: green;
+		color: green;
+	}
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__list {
+		display: grid;                     
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: s.space(5);            
+		row-gap: s.space(15);
+		margin-top: s.space(10);              
+	}
+}

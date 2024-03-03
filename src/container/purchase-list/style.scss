@@ -1,0 +1,33 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-card/style.scss' as
+  purchaseCard;
+
+@use '../../component/divider/style.scss' as divider;
+
+.main {
+  padding: s.space(6);
+}
+
+.orders__title {
+  margin-bottom: s.space(10);
+	display: flex;
+	justify-content: space-between;
+}
+
+.button__main {
+	background-color: s.color(primary);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+	text-decoration: none;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

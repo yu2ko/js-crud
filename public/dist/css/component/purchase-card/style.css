@@ -1,0 +1,13 @@
+.purchase-card {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr 2fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading__title {
+  font-size: 24px;
+  color: #0050FF;
+}
+
+.heading__info {
+  font-size: 16px;
+  color: #000;
+}
+
+.product-info__divider {
+  width: 100%;
+  height: 1px;
+  background: grey;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 80px;
+  color: black;
+}
+
+.purchase-order__card {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.purchase-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 0;
+  font-size: 16px;
+}
+.purchase-item__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 120px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.button--blue {
+  background-color: #0088ff;
+  border: 1px solid #0088ff;
+}
+.button:hover {
+  opacity: 0.7;
+}
+
+/*# sourceMappingURL=style.css.map */

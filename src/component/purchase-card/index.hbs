@@ -1,0 +1,27 @@
+{{#with data}}
+  <a href='/purchase-info?id={{id}}' class='purchase-card'>
+    <div class='purchase-card__id'>
+      <p>ID: {{id}}</p>
+    </div>
+    <div class='purchase-card__item'>
+      <p class='purchase-card__item-title'>Товари</p>
+      <p
+        class='purchase-card__item-info'
+      >{{product.title}}</p>
+    </div>
+
+    <div class='purchase-card__item'>
+      <p class='purchase-card__item-title'>Сума замовлення</p>
+      <p
+        class='purchase-card__item-info'
+      >{{totalPrice}}₴</p>
+    </div>
+
+    <div class='purchase-card__item'>
+      <p class='purchase-card__item-title'>Нараховані бонуси</p>
+      <p
+        class='purchase-card__item-info'
+      >{{bonusProduct}}₴</p>
+    </div>
+  </a>
+{{/with}}

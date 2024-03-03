@@ -1,0 +1,57 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/divider/style.scss' as divider;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(5);
+  padding: s.space(20);
+  color: s.color('font-black');
+
+}
+
+.purchase-order__card {
+	border: 1px solid s.color(border);
+	border-radius: 10px;
+	padding: s.space(5);
+}
+
+.purchase-item {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(2);
+	padding: s.space(4) 0;
+  font-size: 16px;
+
+  &__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: s.space(5);
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: s.space(2);
+  padding: s.space(2) s.space(30);
+  border-radius: s.space(2);
+  border: 1px solid transparent;
+  color: s.color('txt-white');
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &--blue {
+    background-color: s.color('primary');
+    border: 1px solid s.color('primary');
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

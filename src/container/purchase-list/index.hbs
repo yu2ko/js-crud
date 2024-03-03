@@ -1,0 +1,26 @@
+<main class="main">                                             
+                                                                
+	<div class="orders__title">                              
+			{{> heading title="Мої замовлення"}}
+			<a href="/" class="button__main">Замовити ще</a>                        
+	</div>                                                          
+																																	
+	<section>                                                       
+			<div class='orders'>                                     
+					{{#with data.purchases}}                                
+						{{#if isEmpty}}                                       
+							<p class='orders__info'>Замовлень ще немає</p>   
+						{{else}}                                              
+							<ul class='orders__list'>                        
+								{{#each list}}                                    
+									<li class="orders__list-items">               
+										{{> purchase-card data=this}}                 
+									</li>                                           
+								{{/each}}                                         
+						{{/if}}                                               
+					{{/with}}                                               
+			</div>                                                      
+	</section>                                                      
+                                                                
+</main>                                                         
+                                           
