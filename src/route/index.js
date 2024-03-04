@@ -521,7 +521,6 @@ router.get('/purchase-info', function (req, res) {
 
   res.render('purchase-info', {
     style: 'purchase-info',
-    // component: ['heading', 'divider', 'button'],
 
     title: 'Інформація про замовлення',
 
@@ -531,7 +530,6 @@ router.get('/purchase-info', function (req, res) {
       lastname: purchase.lastname,
       phone: purchase.phone,
       email: purchase.email,
-      // delivery: purchase.delivery,
       product: purchase.product.title,
       productPrice: purchase.productPrice,
       deliveryPrice: purchase.deliveryPrice,
